@@ -1,6 +1,6 @@
 <head>
 
-<title>GyaanGuru</title>
+<title>levelup</title>
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 crossorigin="anonymous">
@@ -9,52 +9,39 @@ crossorigin="anonymous">
 
 </head>
 
-<body>
-{{> main}}
-</body>
+ <body>
+      {{> main}}
+ </body>
 
 
-<template name="main">
-{{> Template.dynamic template=isHome}}
-</template>
+  <template name="main">
+     {{> Template.dynamic template=isHome}}
+  </template>
 
-<template name="next">
+  <template name="next">
 
+<h1>GYAAN GURU</h1>
+ <div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h1>Login</h1>
 
-<form action="/action_page.php" style="border:1px solid #ccc">
-  <div class="container">
-    <h1>Welcom to GyaanGuru</h1>
-    <br>
-    <hr>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" id="login1" name="email" required>
+    <label for="email"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required id="login1">
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw1" required>
-    
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    <input type="password" placeholder="Enter Password" name="psw" required id="pws1">
+       <button type="submit button" id="b1" class="btn btn-warning">Login</button>
+            <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
-    
-    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
-    
-
-<button type="button" id="b1" class="btn btn-warning" >Login</button>
- <a href="#" style="color:dodgerblue">Learn As a Guest</a>
- <br>
-
-<span>Forgot <a href="#"> Username / Password ?</a></span>
-<span id='create_account'>
-<br>
-<a href="#" id="b2">Create your account ➡ </a>
-</span>
-  </div>
-
-</form>
-</template>
-
+       
+          <span class="psw"><a href="#" id="b2">Create your account ➡ </a></span>
+           
+   </form>
+</div> 
+  </template>
+  
 <template name="b11">
 {{> home}}
 </template>
@@ -62,3 +49,4 @@ crossorigin="anonymous">
 <template name="b12">
 {{> register}}
 </template>
+  
