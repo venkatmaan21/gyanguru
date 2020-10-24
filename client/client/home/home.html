@@ -1,0 +1,83 @@
+<template name="home">
+
+
+<head>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+       {{> chat}}   
+</body>
+</template>
+
+
+<template name="chat">
+    {{> Template.dynamic template=GoNext}}
+  </template>
+
+  <template name="next_1">
+    
+    <nav class="navbar  navbar-dark bg-dark ">
+ <div class="navbar">
+    <pre>
+<a class="navbar-brand text-white" href="#home">Home</a>    <a class="navbar-brand text-white" href="#news">About Us</a>     <a class="navbar-brand text-white" href="#news">Services</a>      <a class="navbar-brand text-white" href="#news">Contact</a>           <a href="#" id="edit"><img  id="l1" width="50" height="50" src="/image/logout.gif"></a>   
+
+
+</pre>
+</div> 
+</nav>
+<div class="container container mt-4 mb-5">
+        <h3 class="display-3 text-center"> SABKA GYAAN</h3>
+        <hr class="bg-dark mb-4 w-25">
+
+        <div class="column">
+         
+            
+            <div class="col-md-4">
+                <div class="card">
+                   <img width="340" height="250" src="/image/cls9.jpeg">
+                    <div class="card-block p-3">
+                        <h4 class="card-title">CLASS 9th</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img width="340" height="250" src="/image/cls10.jpeg">
+                    <div class="card-block p-3">
+                        <h4 class="card-title">CLASS 10th</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img width="340" height="250" src="/image/cls11.png">
+                    <div class="card-block p-3">
+                        <h4 class="card-title">CLASS 11th</h4>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                   <img width="340" height="250" src="/image/cls12.jpeg">
+                    <div class="card-block p-3">
+                        <h4 class="card-title">CLASS 12th</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+   
+<template name="b13">
+    {{> main}}
+</template>
